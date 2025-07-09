@@ -1,18 +1,37 @@
-## Getting Started
+# Java Weather App ☀️☁️🌧️
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+A Swing-based Java GUI that fetches real-time weather data using the OpenWeatherMap API.
 
-## Folder Structure
+---
 
-The workspace contains two folders by default, where:
+## 🚀 Features
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+- 🔎 Live weather info (temperature, humidity, description)
+- 🖼️ Weather icon support
+- 🌡️ Toggle between °C and °F
+- 📅 3-day forecast
+- 🎨 Simple, clean UI using Java Swing
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+---
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+## 📦 Folder Structure
 
-## Dependency Management
+WeatherApp/
+├── src/ # Java source files
+│ └── WeatherApp.java
+├── lib/ # Dependency (JSON JAR)
+│ └── json-20210307.jar
+├── bin/ # Compiled class files
+├── .vscode/ # (Optional) VS Code settings
+├── README.md
+├── LICENSE
+├── .gitignore
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+---
+
+## 🔧 How to Run
+
+### ✅ Compile:
+```
+bash
+javac -cp ".;lib/json-20210307.jar" -d bin src/WeatherApp.java
